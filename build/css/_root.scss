@@ -20,3 +20,25 @@
   // See https://github.com/sass/sass/issues/2383#issuecomment-336349172
   --font-family-Work-Sans: #{inspect($font-family-Work-Sans)};
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $primary;
+  border-radius: $border-radius;
+  transition: $transition-base;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darken($color: $primary, $amount: 2.5);
+}
