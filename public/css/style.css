@@ -1,0 +1,11 @@
+.navbar {
+    width: 100%;
+    z-index: 10000;
+}
+
+.fas {
+    text-align: center;
+    color: #F43E5C;
+    font-size: 2em;
+    margin: 0 0 1em 0;
+}

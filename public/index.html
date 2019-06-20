@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/f4190df4d4.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Horizon Theme</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br><br><br><br>
+
+    <main class="bd-masthead" id="content" role="main">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 mx-auto col-md-12">
+                    <h1 class="mb-3 bd-text-purple-bright text-center">Horizon Theme for Bootstrap</h1>
+                    <br /><br />
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-6 mx-auto col-md-6 order-md-2">
+                    <img src="{{ site.baseurl }}/assets/img/MD4B.svg" alt="" class="img-fluid mb-3 mb-md-0">
+                </div>
+                <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
+                    <p class="lead">
+                        Build responsive, mobile-first projects on the web with the world's most popular Horizon Theme
+                        front-end component library.
+                    </p>
+                    <p class="lead mb-4">
+                        Horizon Theme for Bootstrap is an open source toolkit based on Bootstrap for developing
+                        Horizon Theme apps with HTML, CSS, and JS. Quickly prototype your ideas or build your entire
+                        app with our Sass variables and mixins, responsive grid system, extensive prebuilt components,
+                        and powerful plugins built on jQuery.
+                    </p>
+                    <div class="d-flex flex-column flex-md-row lead mb-3">
+                        <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/"
+                            class="btn btn-lg btn-primary"
+                            onclick="ga('send', 'event', 'Jumbotron actions', 'Get started', 'Get started');">Get
+                            started</a>
+                        <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/download/"
+                            class="btn btn-lg btn-secondary"
+                            onclick="ga('send', 'event', 'Jumbotron actions', 'Download', 'Download {{ site.current_version }}');">Download</a>
+                    </div>
+                    <p class="text-muted mb-0">
+                        Currently v1.0
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="masthead-followup row m-0 border border-white">
+        <div class="col-12 col-md-6 p-3 p-md-5 bg-light border border-white">
+            <!-- Icon by Bytesize https://github.com/danklammer/bytesize-icons -->
+            <i class="fas fa-download"></i>
+            <h3>Download</h3>
+            <!-- <p>Include Bootstrap's source Sass and JavaScript files via Bower, Composer, Meteor, or npm. Package managed
+                installs don't include documentation, but do include our build system and readme.</p> -->
+            <p>Download The Horizon Bootstrap theme by clicking the download button below. In the zip file there will be
+                SCSS, CSS and JavaScript files. Simply link using html link and script function as show down below.
+                <xmp>
+<script src=""></script>
+<link rel="stylesheet" href="">
+                </xmp>
+            </p>
+
+            <hr class="half-rule">
+            <a class="btn btn-outline-primary" href="">Download</a>
+        </div>
+
+        <div class="col-12 col-md-6 p-3 p-md-5 bg-light border border-white">
+            <!-- Icon by Bytesize https://github.com/danklammer/bytesize-icons -->
+            <i class="fas fa-file-export"></i>
+            <h3>Bootstrap CDN</h3>
+            <p>When you only need to include Bootstrap's compiled CSS or JS, you can use the Bootstrap CDN.</p>
+
+            <h5>CSS only</h5>
+            {% highlight html %}
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+            <link rel="stylesheet" href="{{ site.cdn.css }}" integrity="{{ site.cdn.css_hash }}"
+                crossorigin="anonymous">
+            {% endhighlight %}
+
+            <h5>JS, Popper.js, and jQuery</h5>
+            {% highlight html %}
+            <script src="{{ site.cdn.jquery }}" integrity="{{ site.cdn.jquery_hash }}" crossorigin="anonymous"></script>
+            <script src="{{ site.cdn.popper }}" integrity="{{ site.cdn.popper_hash }}" crossorigin="anonymous"></script>
+            <script src="{{ site.cdn.js }}" integrity="{{ site.cdn.js_hash }}" crossorigin="anonymous"></script>
+            {% endhighlight %}
+            <hr class="half-rule">
+            <a class="btn btn-outline-primary"
+                href="{{ site.baseurl }}/docs/{{ site.docs_version }}/layout/overview/">Explore the docs</a>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
