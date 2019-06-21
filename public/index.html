@@ -12,38 +12,44 @@
     <title>Horizon Theme</title>
 </head>
 
+<!--
+NOTES
+- change descriptions
+- update nav done
+- title page done
+- do other pages 
+-->
+
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                    Horizon Theme</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Docs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Examples</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Updates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Github</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -58,8 +64,8 @@
                 </div>
             </div>
             <div class="row align-items-center">
-                <div class="col-6 mx-auto col-md-6 order-md-2">
-                    <img src="{{ site.baseurl }}/assets/img/MD4B.svg" alt="" class="img-fluid mb-3 mb-md-0">
+                <div class="col-6 mx-auto col-md-6 order-md-2"> <!-- Change this -->
+                    <img src="./img/undraw_landing_page_q6hh.png" alt="" class="img-fluid mb-3 mb-md-0">
                 </div>
                 <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
                     <p class="lead">
@@ -115,23 +121,26 @@
             <p>When you only need to include Bootstrap's compiled CSS or JS, you can use the Bootstrap CDN.</p>
 
             <h5>CSS only</h5>
-            {% highlight html %}
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
-            <link rel="stylesheet" href="{{ site.cdn.css }}" integrity="{{ site.cdn.css_hash }}"
-                crossorigin="anonymous">
-            {% endhighlight %}
+            <xmp>
+<link rel="stylesheet" href="https://xestra1.github.io/Horizon-Theme/cdn/bootstrap.css">
+            </xmp>
 
             <h5>JS, Popper.js, and jQuery</h5>
-            {% highlight html %}
-            <script src="{{ site.cdn.jquery }}" integrity="{{ site.cdn.jquery_hash }}" crossorigin="anonymous"></script>
-            <script src="{{ site.cdn.popper }}" integrity="{{ site.cdn.popper_hash }}" crossorigin="anonymous"></script>
-            <script src="{{ site.cdn.js }}" integrity="{{ site.cdn.js_hash }}" crossorigin="anonymous"></script>
-            {% endhighlight %}
+            <xmp>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            </xmp>
             <hr class="half-rule">
             <a class="btn btn-outline-primary"
                 href="{{ site.baseurl }}/docs/{{ site.docs_version }}/layout/overview/">Explore the docs</a>
         </div>
     </div>
+
+    <footer>
+        <h4>Horizon Theme</h4>
+        <p>created by <a href="https://xestra.us">Xestra</a></p>
+    </footer>
 
 
     <script src="js/jquery.min.js"></script>

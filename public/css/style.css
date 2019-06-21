@@ -1,6 +1,8 @@
 .navbar {
     width: 100%;
     z-index: 10000;
+    -webkit-box-shadow: 0px 2.5px 10px 5px rgba(244,62,92,0.2); 
+            box-shadow: 0px 2.5px 10px 5px rgba(244,62,92,0.2);
 }
 
 .fas {
@@ -8,4 +10,21 @@
     color: #F43E5C;
     font-size: 2em;
     margin: 0 0 1em 0;
+}
+
+.d-flex .btn {
+    margin: 0 1em 0 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+xmp {
+    overflow-x: scroll;
 }
